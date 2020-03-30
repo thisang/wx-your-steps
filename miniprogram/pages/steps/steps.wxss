@@ -1,0 +1,53 @@
+/* miniprogram/pages/steps/steps.wxss */
+.container{
+  width: 750rpx;
+  height: 100%;
+}
+.head{
+  height: 500rpx;
+  width: 750rpx;
+  background: #06ae56;
+  color: #ffffff;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.head .reset{
+  position: absolute;
+  bottom: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.head view{
+  padding: 0 30rpx;
+}
+.link-text{
+  color: #ffffff;
+  text-decoration: underline;
+}
+.steps{
+  font-size: 100rpx;
+  margin: 30rpx 0 30rpx 0;
+}
+.chart-warp{
+  width: 750rpx;
+  height: 600rpx;
+  position: relative;
+}
+.chart-wait{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #999999;
+}
+ec-canvas {
+  width: 750rpx;
+  height: 600rpx;
+}
+
+.btn {
+  margin: 30rpx;
+}

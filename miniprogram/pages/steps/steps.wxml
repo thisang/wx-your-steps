@@ -1,0 +1,18 @@
+<!--miniprogram/pages/steps/steps.wxml-->
+<view class="container">
+  <view class="head">
+    <view class="tl">{{infoTime}}，你走了</view>
+    <view class="tc steps">{{infoSteps}}</view>
+    <view class="tr">步，{{infoComment}}</view>
+    <text wx:if="{{showType === 'day'}}" class="link-text reset" bindtap="reset">查看统计</text>
+  </view>
+  <view class="chart-warp">
+    <view class="chart-wait tc" wx:if="{{loading}}">
+      <text>正在努力获取你的步数 ...</text>
+    </view>
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+  <view class="btn" wx:if="{{!loading}}">
+    <button type="primary" size="default" plain open-type="share"> 分享 </button>
+  </view>
+</view>
